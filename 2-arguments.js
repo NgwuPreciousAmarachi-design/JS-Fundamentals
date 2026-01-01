@@ -1,10 +1,10 @@
-// Calculate the number of arguments by subtracting the first two default elements
-const count = Process.argv.length -2;
+#!/usr/bin/node
+const args = process.argv.length - 2;
 
-if (count === 0) {
-    console.log('No argument')
-}else if (count === 1) {
-    console.log('Argument found')
+if (args === 0) {
+  console.log('No argument');
+} else if (args === 1) {
+  console.log('Argument found');
 } else {
-    console.log('Arguments found');
+  console.log('Arguments found');
 }
